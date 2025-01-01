@@ -4,6 +4,7 @@ const Footer = () => {
       <div className="footer gap-0">
         <aside className="text-center  flex flex-col flex-1 justify-center items-center w-full bg-[#1F2937] text-white p-10">
           <h3 className="uppercase text-2xl">Contact Us</h3>
+
           <p>123 ABS Street, Uni 21, Bangladesh</p>
           <p>+88 123456789</p>
           <p>Mon - Fri: 08:00 - 22:00</p>
