@@ -3,7 +3,11 @@ import daisyui from "daisyui";
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "intro-bg": "url(./src/assets/home/chef-service.jpg)",
+      },
+    },
   },
   plugins: [daisyui],
 };
