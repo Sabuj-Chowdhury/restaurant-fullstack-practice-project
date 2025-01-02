@@ -4,20 +4,21 @@ import { PiShoppingCartBold } from "react-icons/pi";
 const Navbar = () => {
   const navOptions = (
     <>
-      <li className="uppercase font-bold text-white text-sm">
-        <NavLink>Home</NavLink>
+      <li className="uppercase font-bold text-sm">
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li className="uppercase font-bold  text-sm">
+        <NavLink to="/menu">Our menu</NavLink>
       </li>
 
-      <li className="uppercase font-bold text-white text-sm">
+      <li className="uppercase font-bold  text-sm">
         <NavLink>Contact Us</NavLink>
       </li>
-      <li className="uppercase font-bold text-white text-sm">
+      <li className="uppercase font-bold  text-sm">
         <NavLink>Dashboard</NavLink>
       </li>
-      <li className="uppercase font-bold text-white text-sm">
-        <NavLink>Our menu</NavLink>
-      </li>
-      <li className="uppercase font-bold text-white text-sm">
+
+      <li className="uppercase font-bold  text-sm">
         <NavLink>Our Shop</NavLink>
       </li>
     </>
