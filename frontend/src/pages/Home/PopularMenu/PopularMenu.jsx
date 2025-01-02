@@ -16,7 +16,7 @@ const PopularMenu = () => {
   //   console.log(menu);
 
   return (
-    <section className="mb-10">
+    <section className="mb-10 ">
       <SectionTitle
         heading="from our menu"
         subHeading="Check it out"
@@ -26,7 +26,12 @@ const PopularMenu = () => {
           <MenuItem key={idx} item={item}></MenuItem>
         ))}
       </div>
-      {/* TODO: button */}
+      {/* button */}
+      <div className=" flex justify-center">
+        <button className="btn btn-outline border-0  border-b-2 mt-5 flex justify-center items-center">
+          View Full Menu
+        </button>
+      </div>
     </section>
   );
 };
