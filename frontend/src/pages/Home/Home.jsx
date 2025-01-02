@@ -3,10 +3,11 @@ import Category from "./Category/Category";
 import Featured from "./Featured/Featured";
 import Intro from "./Intro/Intro";
 import PopularMenu from "./PopularMenu/PopularMenu";
+import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
   return (
-    <div>
+    <section>
       {/* Banner */}
       <Banner></Banner>
       {/* Category */}
@@ -17,7 +18,9 @@ const Home = () => {
       <PopularMenu></PopularMenu>
       {/* featured */}
       <Featured></Featured>
-    </div>
+      {/* testimonials */}
+      <Testimonials></Testimonials>
+    </section>
   );
 };
 
