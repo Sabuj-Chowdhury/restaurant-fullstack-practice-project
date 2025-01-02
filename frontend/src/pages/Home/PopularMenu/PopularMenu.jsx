@@ -16,12 +16,12 @@ const PopularMenu = () => {
   //   console.log(menu);
 
   return (
-    <section>
+    <section className="mb-10">
       <SectionTitle
         heading="from our menu"
         subHeading="Check it out"
       ></SectionTitle>
-      <div>
+      <div className="grid md:grid-cols-2 gap-10">
         {menu.map((item, idx) => (
           <MenuItem key={idx} item={item}></MenuItem>
         ))}
