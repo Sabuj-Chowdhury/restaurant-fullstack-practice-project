@@ -26,6 +26,7 @@ const PopularMenu = () => {
           <MenuItem key={idx} item={item}></MenuItem>
         ))}
       </div>
+      {/* TODO: button */}
     </section>
   );
 };
