@@ -1,21 +1,22 @@
 import { Helmet } from "react-helmet-async";
 import PageCover from "../../components/PageCover/PageCover";
-import menuImg from "../../assets/menu/banner3.jpg";
+import shopImg from "../../assets/shop/banner2.jpg";
 
-const Menu = () => {
+const OurShop = () => {
   return (
     <div>
       <Helmet>
-        <title>Bistro Boss | Menu</title>
+        <title>Bistro Boss | Shop</title>
       </Helmet>
 
+      {/* Cover */}
       <PageCover
-        img={menuImg}
-        heading="our menu"
+        img={shopImg}
+        heading="our shop"
         subHeading="would you like to try a dish?"
       ></PageCover>
     </div>
   );
 };
 
-export default Menu;
+export default OurShop;

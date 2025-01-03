@@ -10,16 +10,15 @@ const Navbar = () => {
       <li className="uppercase font-bold  text-sm">
         <NavLink to="/menu">Our menu</NavLink>
       </li>
+      <li className="uppercase font-bold  text-sm">
+        <NavLink to="/shop">Our Shop</NavLink>
+      </li>
 
       <li className="uppercase font-bold  text-sm">
-        <NavLink>Contact Us</NavLink>
+        <NavLink to="/contact-us">Contact Us</NavLink>
       </li>
       <li className="uppercase font-bold  text-sm">
         <NavLink>Dashboard</NavLink>
-      </li>
-
-      <li className="uppercase font-bold  text-sm">
-        <NavLink>Our Shop</NavLink>
       </li>
     </>
   );
