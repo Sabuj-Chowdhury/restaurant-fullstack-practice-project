@@ -28,6 +28,7 @@ const Login = () => {
       setCaptchaError("");
     } else {
       setCaptchaError("Invalid captcha. Please try again.");
+      return;
     }
   };
 
