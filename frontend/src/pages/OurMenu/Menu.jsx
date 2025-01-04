@@ -9,6 +9,7 @@ import desertImg from "../../assets/menu/dessert-bg.jpeg";
 import pizzaImg from "../../assets/menu/pizza-bg.jpg";
 import saladImg from "../../assets/menu/salad-bg.jpg";
 import soupImg from "../../assets/menu/soup-bg.jpg";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [menu] = useMenu();
@@ -50,15 +51,17 @@ const Menu = () => {
       {/* deserts menu cover */}
       <MenuCover
         img={desertImg}
-        heading="Deserts"
+        heading="Desserts"
         paragraph="Indulge in our heavenly desserts, from rich chocolate lava cakes to creamy cheesecakes, each crafted to satisfy your sweet cravings."
       ></MenuCover>
       <MenuCategory items={deserts}></MenuCategory>
       {/* button */}
       <div className="flex justify-center items-center mb-10">
-        <button className="uppercase btn btn-outline border-0 border-b-4">
-          order your favorite food
-        </button>
+        <Link to="/shop/Desserts">
+          <button className="uppercase btn btn-outline border-0 border-b-4">
+            order your favorite food
+          </button>
+        </Link>
       </div>
 
       {/* pizza menu cover */}
@@ -70,9 +73,11 @@ const Menu = () => {
       <MenuCategory items={pizzas}></MenuCategory>
       {/* button */}
       <div className="flex justify-center items-center mb-10">
-        <button className="uppercase btn btn-outline border-0 border-b-4">
-          order your favorite food
-        </button>
+        <Link to="/shop/Pizza">
+          <button className="uppercase btn btn-outline border-0 border-b-4">
+            order your favorite food
+          </button>
+        </Link>
       </div>
 
       {/* salad menu cover */}
@@ -84,9 +89,11 @@ const Menu = () => {
       <MenuCategory items={salads}></MenuCategory>
       {/* button */}
       <div className="flex justify-center items-center mb-10">
-        <button className="uppercase btn btn-outline border-0 border-b-4">
-          order your favorite food
-        </button>
+        <Link to="/shop/Salad">
+          <button className="uppercase btn btn-outline border-0 border-b-4">
+            order your favorite food
+          </button>
+        </Link>
       </div>
 
       {/* soup menu cover */}
@@ -98,9 +105,11 @@ const Menu = () => {
       <MenuCategory items={soups}></MenuCategory>
       {/* button */}
       <div className="flex justify-center items-center mb-10">
-        <button className="uppercase btn btn-outline border-0 border-b-4">
-          order your favorite food
-        </button>
+        <Link to="/shop/Soups">
+          <button className="uppercase btn btn-outline border-0 border-b-4">
+            order your favorite food
+          </button>
+        </Link>
       </div>
     </section>
   );

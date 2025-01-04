@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { PiShoppingCartBold } from "react-icons/pi";
 
 const Navbar = () => {
@@ -11,15 +11,15 @@ const Navbar = () => {
         <NavLink to="/menu">Our menu</NavLink>
       </li>
       <li className="uppercase font-bold  text-sm">
-        <NavLink to="/shop">Our Shop</NavLink>
+        <Link to="/shop/Salad">Our Shop</Link>
       </li>
 
       <li className="uppercase font-bold  text-sm">
         <NavLink to="/contact-us">Contact Us</NavLink>
       </li>
-      <li className="uppercase font-bold  text-sm">
+      {/* <li className="uppercase font-bold  text-sm">
         <NavLink>Dashboard</NavLink>
-      </li>
+      </li> */}
     </>
   );
   return (
