@@ -66,7 +66,7 @@ const Navbar = () => {
         <div className="text-2xl border rounded-full p-2 text-white bg-black">
           <PiShoppingCartBold />
         </div>
-        <NavLink>
+        <NavLink to="/login">
           <button
             className="
   uppercase btn "
