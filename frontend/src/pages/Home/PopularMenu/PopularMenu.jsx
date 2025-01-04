@@ -1,6 +1,6 @@
 import SectionTitle from "../../../components/shared/SectionTitle/SectionTitle";
-import MenuItem from "../../../components/shared/MenuItem/MenuItem";
 import useMenu from "../../../hooks/useMenu";
+import MenuCategory from "../../OurMenu/MenuCategory/MenuCategory";
 
 const PopularMenu = () => {
   const [menu] = useMenu();
@@ -24,11 +24,7 @@ const PopularMenu = () => {
         heading="from our menu"
         subHeading="Check it out"
       ></SectionTitle>
-      <div className="grid md:grid-cols-2 gap-10">
-        {popular.map((item, idx) => (
-          <MenuItem key={idx} item={item}></MenuItem>
-        ))}
-      </div>
+      <MenuCategory items={popular}></MenuCategory>
       {/* button */}
       <div className=" flex justify-center">
         <button className="btn btn-outline border-0  border-b-2 mt-5 flex justify-center items-center">

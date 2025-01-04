@@ -1,4 +1,8 @@
+import PropTypes from "prop-types";
+
 const PageCover = ({ img, heading, subHeading }) => {
+  // console.log(typeof img, typeof heading, typeof subHeading);
+
   return (
     <div
       className=" md:min-h-[600px] min-h-96 bg-fixed  flex items-center justify-center bg-cover bg-center mb-10"
@@ -18,3 +22,9 @@ const PageCover = ({ img, heading, subHeading }) => {
 };
 
 export default PageCover;
+
+PageCover.propTypes = {
+  img: PropTypes.string,
+  heading: PropTypes.string,
+  subHeading: PropTypes.string,
+};
