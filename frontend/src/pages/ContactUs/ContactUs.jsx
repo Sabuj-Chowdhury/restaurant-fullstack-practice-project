@@ -2,9 +2,12 @@ import { Helmet } from "react-helmet-async";
 import PageCover from "../../components/PageCover/PageCover";
 import contactImg from "../../assets/contact/banner.jpg";
 
+import Location from "./Location/Location";
+import ContactFrom from "./ContactForm/ContactFrom";
+
 const ContactUs = () => {
   return (
-    <div>
+    <section>
       {/* dynamic title */}
       <Helmet>
         <title>Bistro Boss | Contact</title>
@@ -15,7 +18,10 @@ const ContactUs = () => {
         heading="contact us"
         subHeading="would you like to try a dish?"
       ></PageCover>
-    </div>
+
+      <Location></Location>
+      <ContactFrom></ContactFrom>
+    </section>
   );
 };
 
